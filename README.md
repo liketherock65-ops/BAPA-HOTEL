@@ -9,14 +9,16 @@ This file is for you and the hotel. It is not part of the visible website.
 
 ```
 bapa-hotel/
-├── index.html      the page (all sections)
-├── style.css       the design
-├── script.js       menu, gallery, enquiry form, and the CONFIG block
-├── README.md       this guide
-└── images/         photographs, logo mark and favicon
+├── index.html                    the page (all sections)
+├── style.css                     the design
+├── script.js                     menu, gallery, enquiry form, and the CONFIG block
+├── README.md                     this guide
+├── bapa-hotel-*.jpg              photographs
+├── bapa-hotel-logo-mark.png      logo mark
+└── favicon.png                   browser tab icon
 ```
 
-The `images` folder is a single level on purpose. Keeping everything one folder deep makes uploading to GitHub simpler.
+There are no subfolders on purpose. Every file sits in the same place, so nothing can end up in the wrong folder when uploading to GitHub.
 
 ## Open it on your computer
 
@@ -48,7 +50,7 @@ The phone number also appears in two places that JavaScript does not change: the
 
 ## Replace the photographs
 
-Replace a file in `images/` with a new photo that has the exact same filename. No code changes are needed.
+Replace a photo file with a new photo that has the exact same filename. No code changes are needed.
 
 | File | Where it appears | Type | Best shape |
 |---|---|---|---|
@@ -90,7 +92,7 @@ Nothing is saved in the browser. The page never says a stay is confirmed. Online
 1. Sign in to github.com and create a new repository (or open your existing one).
 2. Extract the zip on your computer.
 3. In the repository, choose Add file, then Upload files.
-4. Drag in everything inside the extracted `bapa-hotel` folder: `index.html`, `style.css`, `script.js`, `README.md` and the whole `images` folder. Drag the `images` folder as a folder, not photo by photo. `index.html` must sit at the top level of the repository, not inside another folder.
+4. Open the extracted `bapa-hotel` folder, press Ctrl+A to select every file, and drag them all in at once. There are no folders to worry about. `index.html` must sit at the top level of the repository, not inside another folder.
 5. Choose Commit changes.
 6. Go to Settings, then Pages. Under Build and deployment, set Source to "Deploy from a branch", Branch to `main`, Folder to `/ (root)`, then Save.
 7. Wait one to two minutes and refresh the Pages screen. The address of your site appears at the top, for example `https://your-username.github.io/your-repository/`.
@@ -102,7 +104,7 @@ If you use GitHub Desktop instead, copy the files into your repository folder, t
 ### If something is missing after publishing
 
 - Plain page with no design: `style.css` is not at the top level next to `index.html`. Open the repository and check.
-- No pictures: the `images` folder is missing or its files were uploaded loose. Upload the folder again.
+- No pictures (you see "Photograph coming soon" panels): the `.jpg` and `.png` files are missing from the repository or are not next to `index.html`. Upload them again.
 - Menu or form does nothing: `script.js` is missing or not next to `index.html`.
 - Old version still showing: hold Ctrl and press F5 (or clear the browser cache), and wait a minute for GitHub to rebuild.
 
